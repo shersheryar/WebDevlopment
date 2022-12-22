@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff173;
+            transition: 0.5s;
+            padding: 20px;
+        }
+      #blur.active {
+        filter: blur(20px);
+        pointer-events: none;
+      }
+      #popUp {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        height: auto;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        padding: 50px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      #popUp.active {
+        top: 50%;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+      }
+    </style>
+    <div class="container" id="blur">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fugit
+        eligendi voluptas dolorum cum, rerum doloribus molestias reiciendis quod
+        sapiente quo facilis? Nam quo nostrum repellendus pariatur accusamus
+        soluta quaerat?c
+      </p>
+      <button id="btn" onclick="toggle()">read more</button>
+    </div>
+ 
+
+    <script>
+      function toggle() {
+        let blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        let popUp = document.getElementById("popUp");
+        popUp.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

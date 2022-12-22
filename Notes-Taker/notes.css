@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+#main-div {
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+h4 {
+  color: #28a745;
+  text-align: center;
+  padding: 8px 0px;
+}
+label {
+  font-weight: 600;
+}
+#note {
+  width: inherit;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+.add-note {
+  display: grid;
+  justify-items: center;
+}
+.caption {
+  /* background-color: #e8e8e8; */
+  /* border: black 1px solid; */
+  padding-left: 5px;
+}
+.moreData {
+  width: 25%;
+}
+#popUp {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popUp.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}

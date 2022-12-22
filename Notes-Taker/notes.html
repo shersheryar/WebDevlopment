@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Notes taker!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./notes.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div class="container border mt-5 py-5" id="blur">
+      <div class="row">
+        <div id="main-div" class="col-12 mx-auto">
+          <h1>Note Taker</h1>
+          <h4>Add A New Note</h4>
+          <label for="note">Note:</label
+          ><input
+            class="border"
+            type="text"
+            id="note"
+            placeholder="Write your note in here"
+          /><br />
+          <button class="btn btn-success mx-auto add-note">Add Note</button>
+        </div>
+      </div>
+      <div class="row mt-5 main px-5">
+        <p class="caption py-2 border">No notes added yet!</p>
+      </div>
+    </div>
+    <div class="container" id="popUp">
+      <p id="moreDetail"></p>
+      <button id="btn" onclick="toggle()">close</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./notes.js"></script>
+  </body>
+</html>

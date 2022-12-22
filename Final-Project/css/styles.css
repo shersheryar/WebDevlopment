@@ -1,0 +1,71 @@
+.alpha{
+    background-color: rgba(0, 0,0, 0.7);
+    padding: 16px 0px;
+}
+#noxen-home{
+    background-image:url(../images/about1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0,0, 0.7);   
+    
+}
+.col-6{
+    border: none;
+    
+}
+
+.col-3{
+    background: #edf7ff;
+    margin: 0 auto;
+    
+}
+#features{
+    padding: 5rem 0;
+    text-align: center;  
+}
+#expertise{
+    background-color: #f6f5f5;
+    padding: 5rem 0;
+}
+.skills{
+    padding: 3rem;
+}
+#journey{
+    padding: 9rem 5rem;
+    background-color: #7f7f7f;
+    color:#ffffff;
+}
+#numbers{
+    padding:9rem 5rem ;
+    background-color: #222222;
+}
+#news{
+    padding: 8rem;
+    background-color: #f6f5f5;
+}
+#more{
+    background-color: #7f7f7f;
+    padding: 8rem;
+}
+#client{
+    padding: 8rem;
+    background-color: #f6f5f5;
+}
+#quality{
+    background-color: #7f7f7f;
+    padding: 8rem;
+}
+#blog{
+    padding: 8rem;
+    background-color: #ffffff;
+}
+#navigation{
+    padding: 8rem;
+    background-color: #000000;
+}
+#navigation .button{
+    border-radius: 50px 50px;
+    font-size: 1.5rem;
+}
+
+
