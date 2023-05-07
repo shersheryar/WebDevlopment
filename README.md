@@ -1,3 +1,3 @@
 	
-	here are some of the that I have done on web devlopment.
+	here are some of the work that I have done on web devlopment.
 
